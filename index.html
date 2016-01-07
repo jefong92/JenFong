@@ -6,14 +6,31 @@
 -->
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Jennifer Fong</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<style>
+		#resume {
+			width: 100%;
+				height:1300px;
+				width:800px;
+		}
+	</style>
+<script type="text/javascript" src="pdfobject.js"></script>
+     <script type="text/javascript">
+      window.onload = function (){
+        var myPDF = new PDFObject({ url: "Resume.pdf" }).embed("#resume");
+      };
+			</script>
+
+
 	</head>
+
+
 	<body>
 
 		<!-- Wrapper-->
@@ -22,9 +39,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#aboutMe" class="icon fa-info-circle"><span>About Me</span></a>
+						<a href="#resume" class="icon fa-folder"><span>Résumé</span></a>
 						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-						<a href="#" class="icon fa-twitter"><span>Twitter</span></a>
+						<a href="https://www.linkedin.com/profile/view?id=AAIAABth3vkB-MWi8TG2Mfct2jxBUWtbxdhtIGg&trk=nav_responsive_tab_profile" class="icon fa-linkedin"><span>LinkedIn</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -33,77 +51,76 @@
 						<!-- Me -->
 							<article id="me" class="panel">
 								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
+									<h1>Jennifer Fong</h1>
+									<p>Bachelor of Applied Science<br>
+									Honors Chemical Engineering<br>
+									<font size="5">Specialization in Management Sciences</font><br>
+								University of Waterloo</p>
 								</header>
 								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
 									<img src="images/me.jpg" alt="" />
 								</a>
 							</article>
 
+							<!-- AboutMe -->
+								<article id="aboutMe" class="panel">
+									<header>
+										<h2>About Me</h2>
+									</header>
+									<div>
+									<p> Hi! Welcome to my website! </p>
+									<p> I'm a fourth year Chemical Engineering student at University of Waterloo.
+										This is the second website that I have made. I have a wide variety of intersts,
+										including making websites. I am currently looking for full time employment which
+									 will ideally allow me to apply my chemical engineering education as well as
+									 to express mt creative side </p>
+										<p>I would be beneficial to an organization seeking for continous improvement
+											 and optimization of their business. I have had several co-op experiances where my
+											 main objetive was process improvement. In these instances, I have applied Lean Six Sigma
+											  and </p>
+								</div>
+									</a>
+								</article>
+
 						<!-- Work -->
-							<article id="work" class="panel">
+							<article id="resume" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>Résumé</h2>
 								</header>
+
+
+								<div id="resume">
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+<!-- using resume in PDF format as an object to embed it into the site... not sure I like how this looks -->
+									<object data="Resume - Jen Fong.pdf"
+									type="application/pdf"
+									width="100%"
+									height="1000px">
+									  <p>It appears your browser does not support PDF viewing. No problem! You can download my resume <a href="Resume - Jen Fong.pdf">here!</a></p>
+									</object>
 								</p>
-								<section>
-									<div class="row">
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
+
+								<form method="get" action="Resume - Jen Fong.pdf">
+									<center><button type="submit">Download Résumé</button></center>
+								</form>
+							</div>
+
+
 							</article>
 
 						<!-- Contact -->
+						<!-- hosting on github only supports static so using formspree.io -->
 							<article id="contact" class="panel">
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+
+															
+								<form id="form" action="//formspree.io/jefong@uwaterloo.ca" method="post">
 									<div>
 										<div class="row">
 											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" id="name" placeholder="Name" />
 											</div>
 											<div class="6u$ 12u$(mobile)">
 												<input type="text" name="email" placeholder="Email" />
@@ -127,7 +144,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Jennifer Fong</li>
 						</ul>
 					</div>
 
